@@ -45,7 +45,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2025-03-15T14:15:03.000Z">
-<meta property="article:modified_time" content="2025-03-15T15:20:23.802Z">
+<meta property="article:modified_time" content="2025-03-17T15:42:51.800Z">
 <meta property="article:author" content="tom.li">
 <meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
@@ -1629,7 +1629,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1742052053667),
+    lastupdate: new Date(1742226201839),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
@@ -3039,9 +3039,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>hexo + github 搭配好个人blog之后，可能会觉得有时候主题看起来没有那么帅气，需要更改以下风格才能适应自己，但是自己又不是做前端的，怎么办？这个时候就需要白嫖了，在 <a target="_blank" rel="noopener" href="https://hexo.io/themes/">hexo 主题界面</a> 上可以挑选各种主题，总有一款适合你自己。<br><img src="https://gcore.jsdelivr.net/gh/tom-li-520/blogImage@main/Image/image-20250315222151960.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/tom-li-520/blogImage@main/Image/image-20250315222151960.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250315222151960"></p>
+    <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>hexo + github 搭配好个人blog之后，可能会觉得有时候主题看起来没有那么帅气，需要更改以下风格才能适应自己，但是自己又不是做前端的，怎么办？这个时候就需要白嫖了，在 <a target="_blank" rel="noopener" href="https://hexo.io/themes/">hexo 主题界面</a> 上可以挑选各种主题，总有一款适合你自己。<br><img src="https://gcore.jsdelivr.net/gh/tom-li-520/blogImage@main/Image/image-20250315222151960.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/tom-li-520/blogImage@main/Image/image-20250315222151960.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250315222151960"></p>
 <p>回归正题，本文主要介绍如何使用hexo 生成一个 个人blog 并将volantis主题安装到个人blog中：<br>相关环境准备参考：</p>
-<h2 id="hexo-搭建个人blog"><a href="#hexo-搭建个人blog" class="headerlink" title="hexo 搭建个人blog"></a>hexo 搭建个人blog</h2><ol>
+<h1 id="hexo-搭建个人blog"><a href="#hexo-搭建个人blog" class="headerlink" title="hexo 搭建个人blog"></a>hexo 搭建个人blog</h1><ol>
 <li><p>随便创建一个文件夹，我这里以MyBlogSample为例子，进入文件夹中，右键选择Open git bash here，如下：<br><img src="https://gcore.jsdelivr.net/gh/tom-li-520/blogImage@main/Image/image-20250315223757185.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/tom-li-520/blogImage@main/Image/image-20250315223757185.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250315223757185"><br>我本地因为使用VS 挂了git bash，因此是使用VS 的Terminal：<br><img src="https://gcore.jsdelivr.net/gh/tom-li-520/blogImage@main/Image/image-20250315223907490.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/tom-li-520/blogImage@main/Image/image-20250315223907490.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250315223907490"></p>
 </li>
 <li><p>输入以下命令创建个人blog；</p>
@@ -3064,7 +3064,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>然后在个人浏览器中输入 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 即可访问部署好的blog，后续debug都将采用此方法。初始blog界面如下，如果看到这个界面，就代表你已经成功部署了个人blog了。<br><img src="https://gcore.jsdelivr.net/gh/tom-li-520/blogImage@main/Image/image-20250315230802719.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/tom-li-520/blogImage@main/Image/image-20250315230802719.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250315230802719"></p>
 </li>
 </ol>
-<h2 id="volantis主题安装与修改"><a href="#volantis主题安装与修改" class="headerlink" title="volantis主题安装与修改"></a>volantis主题安装与修改</h2>
+<h1 id="volantis主题安装"><a href="#volantis主题安装" class="headerlink" title="volantis主题安装"></a>volantis主题安装</h1><p>从 <a target="_blank" rel="noopener" href="https://hexo.io/themes/">hexo 主题界面</a> 搜索到volantis之后，可以进入<a target="_blank" rel="noopener" href="https://volantis.js.org/v6/getting-started/">volantis文档</a> 查看如何安装volantis 主题；<br>首先在文件夹中找到_config.yml 修改主题为volantis:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: volantis</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://gcore.jsdelivr.net/gh/tom-li-520/blogImage@main/Image/image-20250317232629429.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/tom-li-520/blogImage@main/Image/image-20250317232629429.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250317232629429"></p>
+<p>然后在bash界面输入以下cmd：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-theme-volantis</span><br></pre></td></tr></table></figure>
+
+<p>出现这个结果就证明安装对了：<br><img src="https://gcore.jsdelivr.net/gh/tom-li-520/blogImage@main/Image/image-20250317232831375.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/tom-li-520/blogImage@main/Image/image-20250317232831375.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250317232831375"></p>
+<p>然后统一运行<code>hexo s</code>打开本地浏览器访问 <code> http://localhost:4000/</code> 即可看到更新后的主题：<br><img src="https://gcore.jsdelivr.net/gh/tom-li-520/blogImage@main/Image/image-20250317233615980.png" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/tom-li-520/blogImage@main/Image/image-20250317233615980.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20250317233615980"></p>
+<p>PS:因为我最后将博客的源码也会保管在github上面，所以我多了一个步骤，会将安装好的volantis主题放在theme 文件夹下，其主题文件在这个位置：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node_modules\hexo-theme-volantis</span><br></pre></td></tr></table></figure>
+
+<p>copy hexo-theme-volantis整个文件放在 <code>\themes</code> 下重命名为 <code>volantis</code> 即可；</p>
+<h1 id="volantis主题调教"><a href="#volantis主题调教" class="headerlink" title="volantis主题调教"></a>volantis主题调教</h1><p>当你白嫖了一个主题之后，可能会有点难受，因为直接用别人的感觉不太顺手，有些功能不想要，有些功能想有他没有，怎么办？哎~ 没关系，开发主题的大佬们已经想到了，留了很多接口供你调教，接下来我会捡一些重要的部分share出来，后续更多的细节就靠自己挖取了；</p>
+<p>在将详细调教之前，先透露一个小妙招，刚刚copy的主题文件中，有一个_config.yml </p>
+<h2 id="volantis主题调教1–菜单栏调教"><a href="#volantis主题调教1–菜单栏调教" class="headerlink" title="volantis主题调教1–菜单栏调教"></a>volantis主题调教1–菜单栏调教</h2>
   </div>
   
   
@@ -3100,10 +3115,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-03-15T23:20:23+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-03-17T23:42:51+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2025年3月15日</p>
+    <p>更新于：2025年3月17日</p>
   </a>
 </div>
 
@@ -3197,7 +3212,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BAblog"><span class="toc-text">hexo 搭建个人blog</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#volantis%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BF%AE%E6%94%B9"><span class="toc-text">volantis主题安装与修改</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#volantis%E4%B8%BB%E9%A2%98%E8%B0%83%E6%95%991%E2%80%93%E8%8F%9C%E5%8D%95%E6%A0%8F%E8%B0%83%E6%95%99"><span class="toc-text">volantis主题调教1–菜单栏调教</span></a></li></ol>
     </div>
   </section>
 
@@ -3781,7 +3796,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Tom's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"tom.li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"some things are interesting"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Tom's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/Hexo/","name":"Hexo"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/Hexo/Hexo-学习记录/","name":"Hexo 学习记录"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/03/15/Hexo/hexo-学习之主题安装/","name":"hexo 学习之个人博客创建与调教"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Tom's blog","url":"http://example.com/","keywords":null,"description":"some things are interesting","author":{"@type":"Person","name":"tom.li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"some things are interesting"},"publisher":{"@type":"Organization","name":"Tom's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"hexo 学习之个人博客创建与调教","description":"some things are interesting","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/03/15/Hexo/hexo-%E5%AD%A6%E4%B9%A0%E4%B9%8B%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85/"},"author":{"@type":"Person","name":"tom.li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Tom's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/03/15/Hexo/hexo-%E5%AD%A6%E4%B9%A0%E4%B9%8B%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85/","wordCount":0,"datePublished":"2025-03-15T14:15:03.000Z","dateModified":"2025-03-15T15:20:23.802Z","articleSection":"Hexo","keywords":"hexo","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Tom's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"tom.li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","sameAs":["https://github.com/volantis-x"],"description":"some things are interesting"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://example.com/","name":"Tom's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/Hexo/","name":"Hexo"}},{"@type":"ListItem","position":2,"item":{"@id":"http://example.com/categories/Hexo/Hexo-学习记录/","name":"Hexo 学习记录"}},{"@type":"ListItem","position":3,"item":{"@id":"http://example.com/2025/03/15/Hexo/hexo-学习之主题安装/","name":"hexo 学习之个人博客创建与调教"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Tom's blog","url":"http://example.com/","keywords":null,"description":"some things are interesting","author":{"@type":"Person","name":"tom.li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/","description":"some things are interesting"},"publisher":{"@type":"Organization","name":"Tom's blog","url":"http://example.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://example.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"hexo 学习之个人博客创建与调教","description":"some things are interesting","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/03/15/Hexo/hexo-%E5%AD%A6%E4%B9%A0%E4%B9%8B%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85/"},"author":{"@type":"Person","name":"tom.li","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://example.com/"},"publisher":{"@type":"Organization","name":"Tom's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://example.com/2025/03/15/Hexo/hexo-%E5%AD%A6%E4%B9%A0%E4%B9%8B%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85/","wordCount":0,"datePublished":"2025-03-15T14:15:03.000Z","dateModified":"2025-03-17T15:42:51.800Z","articleSection":"Hexo","keywords":"hexo","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
